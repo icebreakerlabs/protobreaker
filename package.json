@@ -1,0 +1,37 @@
+{
+  "name": "react-forked",
+  "version": "0.0.0",
+  "description": null,
+  "keywords": [],
+  "main": "src/index.tsx",
+  "dependencies": {
+    "@chakra-ui/icons": "latest",
+    "@chakra-ui/react": "latest",
+    "@chakra-ui/theme": "latest",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "framer-motion": "7.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "latest",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.0",
+    "typescript": "latest",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
