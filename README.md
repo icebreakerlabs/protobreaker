@@ -8,7 +8,9 @@
 
 ## About
 
-Created by Icebreaker for ETHDenver 2023. Sharing the source code for other builders to easily launch simple NFT drops in a mobile-minting friendly dapp format.
+Created by Icebreaker for ETHDenver 2023. Sharing the source code for other builders to easily launch simple NFT drops in a mobile-minting friendly dapp format. 
+
+Note that the current linked contract only allows minting from a single allowlisted address. See installation section for details.
 
 
 ### Built With
@@ -30,7 +32,7 @@ This is an example of how to list things you need to use the software and how to
 * yarn
 * Node.js v18+
 
-### Installation
+### Installation & setup
 
 1. Fork and clone the repo
    ```sh
@@ -44,7 +46,7 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    yarn dev
    ```
-4. Create your own versions of the smart contract and typeform and update the IDs
+4. Create your own versions of the NFT smart contract and typeform, then update the app to point to the new addresses
    
    * Go to [thirdweb][thirdweb-url] and deploy your own contract on testnet and mainnet, and upload all the NFTs and claim conditions. Update the contract addresses in utils/env.ts. Please note that the chains are currently hardcoded for goerli and mainnet, so if you're deploying on other chains, you'll need to update those settings in env.ts. Also components/NftCard.tsx hardcodes the opensea links to ethereum so you may need to update that parameter if your main contract is not on ethereum mainnet.
    * Ensure that you have allowlisted the wallet you plan on minting from on thirdweb in its claim conditions.
