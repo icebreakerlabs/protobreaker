@@ -34,16 +34,24 @@ This is an example of how to list things you need to use the software and how to
 
 1. Fork and clone the repo
    ```sh
-   git clone git@github.com:<your GitHub username>/protobreaker-drop.git
+   git clone https://github.com/icebreakerlabs/protobreaker.git
    ```
 2. Install npm packages
    ```sh
    yarn
    ```
-4. Start the development server
+3. Start the development server
    ```sh
    yarn dev
    ```
+4. Create your own versions of the smart contract and typeform and update the IDs
+   
+   * Go to thirdweb [![ThirdWeb][thirdweb-url]] and deploy your own contract on testnet and mainnet, and upload all the NFTs and claim conditions. Update the contract addresses in utils/env.ts. Please note that the chains are currently hardcoded for goerli and mainnet, so if you're deploying on other chains, you'll need to update those settings in env.ts. Also components/NftCard.tsx hardcodes the opensea links to ethereum so you may need to update that parameter if your main contract is not on ethereum mainnet.
+   * Ensure that you have allowlisted the wallet you plan on minting from on thirdweb in its claim conditions.
+   * Update the typeform ID to use your own typeform. Make sure you've configured hidden fields of @address and @owner from the "Advanced" settings in the share tab. You can get the ID by simply looking at the parameter xxxxx in the url on that admin page at https://admin.typeform.com/form/xxxxx/share.
+
+
+
 
 ## Usage
 
@@ -51,7 +59,7 @@ Anyone who's interested in easily deploying their own NFT contract and minting a
 
 ## Roadmap
 
-None. We released this app for fun at ETHDenver 2023.
+None. We released this app for fun at ETHDenver 2023. However, we at some point do intend to demonstrate how this looks when deployed on other chains and using a relayer.
 
 
 ## Contributing

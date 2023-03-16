@@ -41,7 +41,7 @@ export default memo(function Minted() {
             </Button>
           </NextLink>
 
-          <TypeformButton id="rPU9Aq7q" address={address} owner={nft?.owner}>
+          <TypeformButton id="rJj54Ipn" address={address} owner={nft?.owner}>
             <strong>Stay in touch</strong>
           </TypeformButton>
         </Stack>
