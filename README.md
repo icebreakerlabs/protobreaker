@@ -12,6 +12,8 @@ Created by Icebreaker for ETHDenver 2023. Sharing the source code for other buil
 
 Note that the current linked contract only allows minting from a single allowlisted address. See installation section for details.
 
+Video demo: https://youtu.be/1ItxFtNBWSM
+
 
 ### Built With
 
